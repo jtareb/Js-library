@@ -190,6 +190,113 @@ function analyzeColor(myColor) {
 <input type="radio" name="fav_color3" value="Green" onclick="analyzeColor3(this.value);" /> Green <br />
 <input type="radio" name="fav_color3" value="None" onclick="analyzeColor3(this.value);" /> None*/
 
+/*jquery hover to change color of text*/
+
+
+$(document).ready(function(){
+    $("p").hover(function(){
+        $("p").css("background-color", "grey");
+        
+    });
+});
+
+/*basic innerHTML example*/
+
+
+
+
+function Msg1(){
+  document.getElementById('myText').innerHTML = 'Thanks!';
+}
+function Msg2(){
+  document.getElementById('myText').innerHTML = 'Try message 1 again...';
+}
+/*html
+<input type="button" onclick="Msg1()" value="Show Message 1" />
+<input type="button"  onclick="Msg2()" value="Show Message 2" />
+<p id="myText"></p>*/
+
+/*simeple function to display text in input field*/
+
+
+
+function displayMessage(firstName) {
+    alert("Hello " + firstName + ", hope you like JavaScript functions!")
+}
+
+/*
+<form>
+First name:
+<input type="input" name="yourName" />
+<input
+  type="button"
+  onclick="displayMessage(form.yourName.value)"
+  value="Display Message" />
+</form>*/
+
+
+
+/*jump menu*/
+
+
+function jumpto(x){
+
+if (document.form1.jumpmenu.value != "null") {
+  document.location.href = x
+  }
+}
+
+/*
+<p>Jump Menu:</p>
+<form name="form1">
+<select name="jumpmenu" onChange="jumpto(document.form1.jumpmenu.options[document.form1.jumpmenu.options.selectedIndex].value)">
+  <option>Jump to...</option>
+  <option value=http://www.espn.com>Espn homepage</option>
+  <option value=http://www.google.com>google</option>
+  <option value=http://www.github>github</option>
+  <option value=http://www.weather.gov>Weather info</option>
+</selecg>
+</form>   
+
+/*image rollover from quackit.com*/
+
+/*<p>Image Rollover:</p>*/
+
+
+if (document.images) {
+  smile = new Image
+  nosmile = new Image
+
+  smile.src = "http://www.quackit.com/pix/smile.gif"
+  nosmile.src = "http://www.quackit.com/pix/nosmile.gif"
+}
+
+
+function swapImage(thisImage,newImage) {
+  if (document.images) {
+    document[thisImage].src = eval(newImage + ".src")
+  }
+}
+
+
+/*<a href="http://www.quackit.com/javascript/image_rollovers.cfm"
+onMouseOver="swapImage('jack','smile')"
+onMouseOut="swapImage('jack','nosmile')">
+<img src="http://www.quackit.com/pix/nosmile.gif"
+  width="100"
+  height="100"
+  border="0"
+  alt="Picture of Jack"
+  name="jack">
+</a>
+<div class="more-info">
+<p>More info: <a href="/javascript/image_rollovers.cfm">Image Rollovers</a></p>
+</div>*/
+
+
+
+
+
 
 
 
