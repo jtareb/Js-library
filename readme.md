@@ -1,3 +1,5 @@
-## Yo, I'm a Readme
-
-You should probably update me so people looking at your code have an idea what it is being used for :)
+JavaScript Library
+A collection of JS code that is applicable in a variety of situations
+git@github.com:jtareb/Js-library.git
+Some of the script comes from http://www.quackit.com/javascript/
+© Copyright 2000 - 2015 Quackit.com  
