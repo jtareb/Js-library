@@ -1,8 +1,3 @@
-/*Basic functions*/
-
-
-/*page reloader*/
-
 
 function timedRefresh(timeoutPeriod) {
 	setTimeout("location.reload(true);",timeoutPeriod);
@@ -13,26 +8,6 @@ function timedRefresh(timeoutPeriod) {
 
 
 
-
-container = $('.contentbox');
-
-array_items.results.forEach( function (item)	{
-
-maincontent = '<div class="item">';
-maincontent += '<img src="' + item.Images[0].url_170x135 + '"/>'; 
-maincontent += '<h4>' + item.title + '</h4>';
-maincontent += '<div class= info>';
-maincontent += '<p class="contentshop">' + item.Shop.shop_name + '</p>';
-maincontent += '<p class="money">$' + item.price + item.currency_code + '</p>';
-maincontent += '</div></div>';
-
-});
-	
-
-
-
-
-container.append(maincontent);
 
 
 /*simple addition*/
@@ -55,15 +30,6 @@ var y;
      return total;
     }
 
-add any number of arguments to the add function.
-	
-	functon add(1,2,3,4,5) {
-		var total =0;
-		for (var i = 0; i < arguemnts.length; i++){
-		total += parsefloat( arguemnts[i] );
-		}
-	return total;
-	}
 
 
 /*function to reverse a string*/
@@ -76,6 +42,8 @@ function reverse(){
 console.log(reverse);
 
 /*return an array from a function*/
+var myArray = [];
+
 function makeArray() {
         var myArray = new Array(4);
         myArray[0] = "A";
@@ -92,7 +60,7 @@ function makeArray() {
         }
         return quote;    
    }
-  console.log(quote);
+ 
 
 /*will make an array of 4 objects*/
 
@@ -150,7 +118,7 @@ window.location = sUrl
 
 /*if statement*/
 
-<script type="text/javascript">
+
 
 function analyzeColor(myColor) {
   if (myColor == "Blue") {
@@ -293,20 +261,5 @@ onMouseOut="swapImage('jack','nosmile')">
 
 
 //*document.getElementById type*//
-var  num1, num2, sum, calculate;
-    num1 = document.getElementById('num_one');
-    num2 = document.getElementById('num_two');
-    x = Number('num1').value;
-    y = Number('num2').value;
-    calculate = document.getElementById('calculateBtn');
-  
-
-    calculate.onclick = function () {
-    sum = x + y;
-    sum.innerHTML = 'calculateBtn';
-    answer=sum.innerHTML;
-    
-
-
 
 
