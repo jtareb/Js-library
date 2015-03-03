@@ -295,7 +295,20 @@ onMouseOut="swapImage('jack','nosmile')">
 
 
 
+//*document.getElementById type*//
+var  num1, num2, sum, calculate;
+    num1 = document.getElementById('num_one');
+    num2 = document.getElementById('num_two');
+    x = Number('num1').value;
+    y = Number('num2').value;
+    calculate = document.getElementById('calculateBtn');
+  
 
+    calculate.onclick = function () {
+    sum = x + y;
+    sum.innerHTML = 'calculateBtn';
+    answer=sum.innerHTML;
+    
 
 
 
