@@ -26,7 +26,7 @@ maincontent += '<p class="contentshop">' + item.Shop.shop_name + '</p>';
 maincontent += '<p class="money">$' + item.price + item.currency_code + '</p>';
 maincontent += '</div></div>';
 
-
+});
 	
 
 
@@ -34,9 +34,6 @@ maincontent += '</div></div>';
 
 container.append(maincontent);
 
-from homework
-
-will read an array and return the contents to browser using the append functions
 
 /*simple addition*/
 var x;
